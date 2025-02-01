@@ -516,6 +516,8 @@ svg {
 }
 
 .modal {
+  padding-top: 72px;
+  padding-bottom: 24px;
   padding-right: 24px;
   padding-left: 24px;
   position: absolute;
@@ -573,7 +575,6 @@ svg {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -633,13 +634,14 @@ svg {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked + .modal-check-item {
+.modal-check:checked + .modal-check-item span {
   background-color: #4d5ae5;
   border: none;
   fill: #f4f4fd;
 }
 .modal-container {
   margin-top: 8px;
+  margin-bottom: 24px;
 }
 .modal-check-text {
   font-weight: 400;
@@ -648,7 +650,6 @@ svg {
   letter-spacing: 0.04em;
   color: #8e8f99;
   align-items: center;
-  margin-top: 16px;
 }
 
 .modal-check-item {
@@ -659,17 +660,18 @@ svg {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
-  display: flex;
   align-items: center;
-  display: inline-flex;
+  display: inline-block;
   justify-content: center;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
 }
 .modal-check-link {
   color: #4d5ae5;
 }
 .modal-button {
+  margin: auto;
   display: block;
   font-weight: 500;
   font-size: 16px;
