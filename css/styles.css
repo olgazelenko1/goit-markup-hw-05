@@ -441,18 +441,18 @@ svg {
   margin-bottom: 16px;
 }
 
-.footer-rewiu {
+.footer-reviuw {
   display: block;
   margin-top: 0;
   margin-left: 80px;
   width: 453px;
   height: 80px;
 }
-.rewiu-form {
+.reviuw-form {
   display: flex;
   gap: 24px;
 }
-.button-rewiu {
+.button-reviuw {
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
@@ -470,7 +470,7 @@ svg {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.rewiu-input {
+.reviuw-input {
   border: 1px solid #fff;
   width: 264px;
   height: 40px;
@@ -486,7 +486,7 @@ svg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-rewiu {
+.icon-reviuw {
   margin-left: 16px;
   fill: #fff;
 }
