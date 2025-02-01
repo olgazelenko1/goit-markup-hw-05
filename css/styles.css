@@ -440,6 +440,9 @@ svg {
   color: #ffffff;
   margin-bottom: 16px;
 }
+.form-modal-rewiu {
+  gap: 24px;
+}
 .footer-rewiu {
   display: block;
   margin-top: 0;
@@ -460,28 +463,33 @@ svg {
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
-  width: 165px;
+  font-family: "Roboto", sans-serif;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 16px;
+  cursor: pointer;
 }
-.modal-rewiu {
-  display: block;
-  margin-top: 16px;
-}
+
 .modal-input-rewiu {
   border: 1px solid #fff;
-  width: 100%;
+  width: 264px;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   outline: transparent;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ----------------------------modal settings------------------------- */
