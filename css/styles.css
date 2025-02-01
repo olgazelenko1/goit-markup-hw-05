@@ -440,9 +440,7 @@ svg {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.form-modal-rewiu {
-  gap: 24px;
-}
+
 .footer-rewiu {
   display: block;
   margin-top: 0;
@@ -450,16 +448,11 @@ svg {
   width: 453px;
   height: 80px;
 }
-.form-modal-social {
-  width: 264px;
-  height: 40px;
+.rewiu-form {
+  display: flex;
+  gap: 24px;
 }
 .button-rewiu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 16px;
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
@@ -474,13 +467,14 @@ svg {
   color: #ffffff;
   margin-bottom: 16px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-rewiu {
+.input-rewiu {
   border: 1px solid #fff;
   width: 264px;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid #ffffff;
   background-color: transparent;
   border-radius: 4px;
   font-size: 12px;
@@ -491,6 +485,10 @@ svg {
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-rewiu {
+  margin-left: 16px;
+  fill: #fff;
 }
 /* ----------------------------modal settings------------------------- */
 .backdrop {
@@ -545,11 +543,13 @@ svg {
   border: #8e8f99;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 .icon-button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -557,7 +557,7 @@ svg {
 
 .icon-button:hover,
 .icon-button:focus {
-  fill: #fff;
+  fill: #ffffff;
 }
 .modal-title {
   text-align: center;
@@ -585,30 +585,12 @@ svg {
   padding-left: 38px;
   font-size: 16px;
 }
-.modal-input:focus {
-  border-color: #4d5ae5;
-}
+
 .input-wrap {
   margin-bottom: 16px;
   position: relative;
 }
 
-.modal-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
-  background-color: #404bbf;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  border: none;
-  cursor: pointer;
-  margin-left: 120px;
-}
 .icon-modal {
   position: absolute;
   fill: #2e2f42;
@@ -638,7 +620,7 @@ svg {
   margin-bottom: 8px;
 }
 .modal-textarea {
-  width: 1005;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -662,6 +644,7 @@ svg {
   align-items: center;
   margin-left: 24px;
   margin-top: 0;
+  margin-bottom: 24px;
 }
 .modal-check-text {
   font-weight: 400;
@@ -688,4 +671,25 @@ svg {
   justify-content: center;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.modal-check-link {
+  color: #4d5ae5;
+}
+.modal-button {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  margin-left: 120px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
