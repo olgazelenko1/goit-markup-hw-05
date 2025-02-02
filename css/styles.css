@@ -442,11 +442,10 @@ svg {
 }
 
 .footer-reviuw {
-  display: block;
-  margin-top: 0;
-  margin-left: 80px;
-  width: 453px;
-  height: 80px;
+  margin-left: auto;
+}
+.reviuw-input::placeholder {
+  color: #ffffff;
 }
 .reviuw-form {
   display: flex;
